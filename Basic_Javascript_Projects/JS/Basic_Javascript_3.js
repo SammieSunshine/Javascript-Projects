@@ -28,3 +28,20 @@ function modulus(){
     var modop= 50%9;
     document.getElementById("mod").innerHTML="When 50 is divided by 9, the remainder would be: " +modop;
 }
+
+function negation(){
+    var x= 2;
+    document.getElementById("neg").innerHTML=-x;
+}
+
+var t = 18; {
+t++;
+document.write(t)
+}
+
+var a=20; {
+    a--;
+    document.write(a);
+}
+
+window.alert(Math.random() *8);
