@@ -13,3 +13,37 @@ function slcmt() {
     var section = sentence.slice(18,23);
     document.getElementById("slice").innerHTML=section;
 }
+
+function upper() {
+    var str="the letters in this sentence were originally typed in lowercase.";
+    var resp= str.toUpperCase();
+    document.getElementById("UCase").innerHTML=resp;
+}
+
+function srch() {
+    var string="Don't worry, be happy!";
+    var d =string.search("happy!");
+    document.getElementById("find").innerHTML=d;
+}
+
+function strto() {
+    var s=525600;
+    document.getElementById("tostr").innerHTML=s;
+}
+
+function toprec() {
+    var t= 52.412164;
+    document.getElementById("prec").innerHTML= t.toPrecision(3);
+}
+
+function fixed() {
+    var fnum= 432.2949;
+    var fxd= fnum.toFixed(3);
+    document.getElementById("fixd").innerHTML=fxd;
+}
+
+function val() {
+    var vnum=88;
+    var vmun= vnum.valueOf();
+    document.getElementById("vlu").innerHTML=vmun;
+}
