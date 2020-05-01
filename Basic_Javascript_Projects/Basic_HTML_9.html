@@ -2,29 +2,33 @@
 <html>
 
     <head>
-        <meta charset="UTF-8">
+        <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1">
         <title>Basic HTML/JS 9</title>
         <script src="./JS/Basic_Javascript_9.js"></script>
         <link rel="stylesheet" type="text/css" href="./CSS/Basic_CSS_1.css" >
     </head>
 
     <body>
-        <h3>Step 153: Create an alarm</h3>
 
             <body>
                 <!--Create Alarm-->
-
-                <p>How many seconds would you like to set your alarm for?</p>
-                    <input id="seconds" value="" />
-                        <button onclick="countdown()">Click here.</button>
-                
-                <p id="timer"></p>
+                <h4>Step 153: Create an alarm</h4>
+                    
+                    <p>How many seconds would you like to set your alarm for?</p>
+                        <input id="seconds" value="" />
+                            <button onclick="countdown()">Click here.</button>
+                    <p id="timer"></p>
                 <!--End Create Alarm-->
+                    
 
-                <!--slideshow-container//Step 155-->
-                <h3>Slideshow</h3>
-                <p>The following slideshow was created using, HTML, JS, and CSS!</p>
-                <div class="slideshow-container">
+                <!--slideshow Step 155-->
+                <h3>Step 155: HTML/CSS/JS Slide Show</h3>
+                    <p>The following slide show was created using, HTML, JS, and CSS.</p>
+                
+                <h3>Click an arrow to see the slideshow</h3>
+                
+                    <!--container-->
+                    <div class="slideshow-container">
 
                     <!--full-width images with number and caption text-->
                     <div class="mySlides fade">
@@ -44,13 +48,16 @@
                         <img src="./IMG/community.jpg" style="width:100%">
                         <div class="text">Find, Feed, and Defeat Hunger is one of many volunteer programs we've poured our hearts into! Contact for more info!</div>
                     </div>
+                     <!--End full-width images with number and caption text-->
 
-                        <!--Next/Prev buttons-->
-                        <a class="prev" onclick="plusSlides(-1)">&#10084;</a>
-                        <a class="next" onclick="plusSlides(1)">&#10095;</a>
-                        <!--End full-width images with number and caption text-->
+                    
+                    <!--Next/Prev buttons-->
+                    <a class="prev" onclick="plusSlides(-1)">&#10094</a>
+                    <a class="next" onclick="plusSlides(1)">&#10095</a>
                 </div>
                 <br>
+
+
 
                 <!--Dots/Circles-->
                 <div style="text-align:center">
@@ -60,6 +67,6 @@
                 </div>
                 <!--End Dots/Circles-->
 
-                <!--End slideshow-container//Step 155-->
+            <!--End slideshow-container//Step 155-->
         </body>
 </html>
