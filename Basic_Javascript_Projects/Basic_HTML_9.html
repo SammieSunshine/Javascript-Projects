@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <meta charset="UTF-8">
+        <title>Basic HTML/JS 9</title>
+        <script src="./JS/Basic_Javascript_9.js"></script>
+        <link rel="stylesheet" type="text/css" href="./CSS/Basic_CSS_1.css" >
+    </head>
+
+    <body>
+        <h3>Step 153: Create an alarm</h3>
+
+            <body>
+                <!--Create Alarm-->
+
+                <p>How many seconds would you like to set your alarm for?</p>
+                    <input id="seconds" value="" />
+                        <button onclick="countdown()">Click here.</button>
+                
+                <p id="timer"></p>
+                <!--End Create Alarm-->
+
+                <!--slideshow-container//Step 155-->
+                <h3>Slideshow</h3>
+                <p>The following slideshow was created using, HTML, JS, and CSS!</p>
+                <div class="slideshow-container">
+
+                    <!--full-width images with number and caption text-->
+                    <div class="mySlides fade">
+                        <div class="numbertext">1/3</div>
+                        <img src="./IMG/cottage.jpg" style="width:100%">
+                        <div class="text">We're all family! Make yourself at Care Cottage Community! Make yourself at home!</div>
+                    </div>
+
+                    <div class="mySlides fade">
+                        <div class="numbertext">2/3</div>
+                        <img src="./IMG/garden.jpg" style="width:100%">
+                        <div class="text">Plant, grow, and eat from the community maintained Fresh Finds garden!</div>
+                    </div>
+
+                    <div class="mySlides fade">
+                        <div class="numbertext">3/3</div>
+                        <img src="./IMG/community.jpg" style="width:100%">
+                        <div class="text">Find, Feed, and Defeat Hunger is one of many volunteer programs we've poured our hearts into! Contact for more info!</div>
+                    </div>
+
+                        <!--Next/Prev buttons-->
+                        <a class="prev" onclick="plusSlides(-1)">&#10084;</a>
+                        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                        <!--End full-width images with number and caption text-->
+                </div>
+                <br>
+
+                <!--Dots/Circles-->
+                <div style="text-align:center">
+                    <span class="dot" onclick="currentSlide(1)"></span>
+                    <span class="dot" onclick="currentSlide(2)"></span>
+                    <span class="dot" onclick="currentSlide(3)"></span>
+                </div>
+                <!--End Dots/Circles-->
+
+                <!--End slideshow-container//Step 155-->
+        </body>
+</html>
