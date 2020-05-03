@@ -43,3 +43,14 @@ function constant_function() {
     fast_food.price = "$2.00";
     document.getElementById("Constant").innerHTML= "If you'd like a " + fast_food.flavor +" " + fast_food.type + " from " + fast_food.brand + ", you'll need to pay a total of " + fast_food.price + ".";
 }
+
+//Let keyword
+function let_key() {
+    var v=525;
+    document.write(v);
+    {
+        let v= 252;
+        document.write("<br>"+v);
+    }
+   document.write("<br>"+v);
+}
