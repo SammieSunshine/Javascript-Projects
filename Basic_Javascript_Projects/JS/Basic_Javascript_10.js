@@ -47,10 +47,33 @@ function constant_function() {
 //Let keyword
 function let_key() {
     var v=525;
-    document.write(v);
+    document.getElementById("let1").innerHTML=v;
     {
         let v= 252;
-        document.write("<br>"+v);
+        document.getElementById("let2").innerHTML=v;
     }
-   document.write("<br>"+v);
+   document.getElementById("let3").innerHTML=v;
+}
+
+
+//return statement
+function returnFunc(name){
+    
+    return  "Hello, "+ name;
+    }
+document.getElementById("return").innerText = returnFunc("bob");
+//not returning at all...
+
+function car_func(){
+    let car = {
+        make: "Ford",
+        model: "Taurus",
+        year: "1990",
+        color: "red" ,
+        description, myfunction() {
+        return  "The car is a "+ this.color + " " +this.year + this.make + this.model;
+            
+        }
+    }
+     document.getElementById("car_object").innerHTML= car.description();
 }
