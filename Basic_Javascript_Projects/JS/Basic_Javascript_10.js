@@ -62,18 +62,35 @@ function returnFunc(name){
     return  "Hello, "+ name;
     }
 document.getElementById("return").innerText = returnFunc("bob");
-//not returning at all...
+//not returning at all... 
+//update! Now works! 5/4/2020
 
-function car_func(){
+//use of .this within let
     let car = {
         make: "Ford",
         model: "Taurus",
         year: "1990",
         color: "red" ,
-        description, myfunction() {
-        return  "The car is a "+ this.color + " " +this.year + this.make + this.model;
-            
+        description: function() {
+        return  "The car is a " + this.color + " " + this.year +" " + this.make +" "+ this.model + ".";
         }
-    }
+    };
      document.getElementById("car_object").innerHTML= car.description();
-}
+
+     //break statement
+         var text="";
+         var i;
+         for (i=0; i<10; i++){
+             if (i===3) {break;}
+             text += "the number is "+i+"<br>";
+         }
+     document.getElementById("brk").innerHTML=text;
+
+     //continue statement
+         var text=""; 
+         var i;
+         for (i=0; i<10; i++) {
+             if (1===3) {continue;}
+             text += "The number is "+i+"<br>";
+         }
+     document.getElementById("cntu").innerHTML=text;

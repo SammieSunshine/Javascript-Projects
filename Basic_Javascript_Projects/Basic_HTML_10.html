@@ -2,7 +2,6 @@
 <html lang="en">
     <meta charset="UTF-8">
     <title>Basic10</title>
-    <script src="./JS/Basic_Javascript_10.js"></script>
 
 
     <!--Assignment 174-->
@@ -91,17 +90,36 @@
     <!--Step 195 Challenge-->
     <!--Having issues with return statement working...-->
     <h4>Return Statement</h4>
-        <ul>
-            <li>Stops the execution of a function and <strong>returns</strong> the value from that function.</li>
-        </ul>
-        <p id="return"></p>
-        <button onclick="returnFunc()">Click here for example</button>
-    <!--End Step 195 Challenge-->
+            <ul>
+                <li>Stops the execution of a function and <strong>returns</strong> the value from that function.</li>
+            </ul>    
+        <p>See example below.</p>
+        <p id="return"></p>    
+        <br>
+        <p>In the JS code used for the above example, the function, "returnFunc(name)" is given on the initial line. To get the above outcome, I listed the return as " 'Hello' + name;". The out come of "name" doesn't get declared until we reach the next to last line:  document.getElementByID("return").innerHTML=returnFunc("bob"); </p>
+        <!--End Step 195 Challenge-->
 
     <!--Assignment 198-->
-    <h4>This</h4>
-    <p id="car_object"></p>
-    <button onclick="myfunction()">Click here for example</button>
+    <h4>Creating an object using the keyword, "let"</h4>
+        <p id="car_object"></p>
     <!--End Assignment 198-->
+
+    <!--challenge 199-->
+    <h4>Break Statement/Continue Statement</h4>
+        <h3>Break statement</h3>
+            <ul>
+                <li>Used to "jump out" of a switch() statement</li>
+                <li>Can also be used to jump out of a loop. "Breaks" loop and continues executing the code after the loop(if any)</li>
+            </ul>
+            <p>Example: </p>
+            <p id="brk"></p>
+        <h3>Continue Statement</h3>
+            <ul>
+                <li>breaks one iteration (in a loop), if a specified condition occurs, then continues with the next iteration within the loop.</li>
+            </ul>
+            <p>Example:</p>
+            <p id="cntu"></p>
+    <!--End Challenge 199-->
+    <script src="./JS/Basic_Javascript_10.js"></script>
         </body>
 </html>
