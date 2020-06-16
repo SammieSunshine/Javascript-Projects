@@ -1,8 +1,18 @@
 html {
+    background-color: black;
     font-size: 70%;
     box-sizing: border-box;
 }
 
+body {
+    opacity: 1;
+    transition: 5s;
+}
+
+body.fade-out {
+    opacity: 0;
+    transition: none;
+}
 *, *::before , *::after {
     margin: 0;
     padding: 0;

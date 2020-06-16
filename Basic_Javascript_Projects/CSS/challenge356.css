@@ -1,0 +1,39 @@
+html,#submit{
+    background-color: rgb(3, 3, 185);
+    text-align: center;
+    color:darkgray ;
+    font-family: 'Courier New', Courier, monospace;
+    font:large,bolder;
+}
+
+form{
+   background-color:   rgb(112, 108, 108);
+   text-align: center;
+   font: large,bolder;
+   font-family: 'Courier New', Courier, monospace;
+   color:black;
+   border: 30px groove darkgray;
+}
+
+label{
+    font: 20px italic;
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center;
+}
+
+
+input{
+    background-color: darkgray;
+    color: rgb(9, 9, 129);
+    font-family: 'Courier New', Courier, monospace;
+    font: large,bold;
+    text-align: center;
+    border: 10px ridge rgb(80, 80, 80);
+}
+
+
+#submit:hover{
+    background-color: rgba(204, 174, 7, 0.774);
+    color: darkslategrey;
+    font-weight: bolder;
+}

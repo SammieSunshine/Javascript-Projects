@@ -12,6 +12,11 @@
 </head>
 
 <body>
+    <!--Challenge 355: clean fade-in effect-->
+    <script>
+        document.body.className += ' fade-out';
+    </script>
+    <!--/Challenge 355: clean fade-in effect-->    
     <div class="calculator">
         <input type="text" class="calculator-screen" value="0" disabled />
         <div class="calculator-keys">
@@ -43,5 +48,10 @@
 
         </div>
     </div>
+    <script>
+        $(function(){
+            $('body').removeClass('fade-out');
+        });
+    </script>
 </body>
 </html>
