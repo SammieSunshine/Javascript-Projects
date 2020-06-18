@@ -1,4 +1,5 @@
-html,#submit{
+/*challenge 356: form/ form validation*/
+html{
     background-color: rgb(3, 3, 185);
     text-align: center;
     color:darkgray ;
@@ -6,23 +7,33 @@ html,#submit{
     font:large,bolder;
 }
 
-form{
-   background-color:   rgb(112, 108, 108);
-   text-align: center;
-   font: large,bolder;
-   font-family: 'Courier New', Courier, monospace;
-   color:black;
-   border: 30px groove darkgray;
+.fValidate{
+    background-color:   rgb(112, 108, 108);
+    text-align: center;
+    font: large,bolder;
+    font-family: 'Courier New', Courier, monospace;
+    color:black;
+    border: 30px groove darkgray;
 }
 
-label{
+.fValidate form{
+    background-color:   rgb(112, 108, 108);
+    text-align: center;
+    font: large,bolder;
+    font-family: 'Courier New', Courier, monospace;
+    color:black;
+    border: 10px groove rgb(49, 48, 48);
+ }
+
+
+.fValidate label{
     font: 20px italic;
     font-family: 'Courier New', Courier, monospace;
     text-align: center;
 }
 
 
-input{
+.fValidate input{
     background-color: darkgray;
     color: rgb(9, 9, 129);
     font-family: 'Courier New', Courier, monospace;
@@ -32,8 +43,115 @@ input{
 }
 
 
-#submit:hover{
+.fValidate input[type=submit] {
+    background-color: rgb(3, 3, 185);
+    text-align: center;
+    color:darkgray ;
+    font-family: 'Courier New', Courier, monospace;
+    font:large,bolder;
+
+}
+.fValidate input[type=submit]:hover{
     background-color: rgba(204, 174, 7, 0.774);
     color: darkslategrey;
     font-weight: bolder;
+}
+
+/*Challenge 357: popup form*/
+
+/*Button to open contact form - fixed at bottom of page*/
+
+@keyframes colors{ /* Challenge 358: focuses on only animating the listed animation-name, 'colors'*/
+    from{background-color:#555;}
+    to {background-color: green;}
+}
+.open-button {
+    background-color: #555;
+    color: white;
+    font-family: 'Courier New', Courier, monospace;
+    padding: 16px 20px;
+    border: none;
+    cursor: pointer;
+    opacity: 0.8;
+    position: fixed;
+    bottom: 23px;
+    right: 28px;
+    width: 280px;
+    animation-name: colors; /* animation name for challenge 358. refer to lines 64-67*/
+    animation-duration: 1s; /*will give animation a blink effect*/
+    animation-iteration-count: infinite; /*animation will have an unlimited number of loops*/
+}
+
+
+/*Popup Form - hidden by default*/
+.form-popup{
+    display: none;
+    position: fixed;
+    bottom: 0;
+    right: 15px;
+    border: 3px solid #f1f1f1;
+}
+
+/*Add styles to the form container*/
+.pop-container{
+    max-width: 300px;
+    padding: 10px;
+    background-color: white;
+}
+
+/*Full-width input fields*/
+.pop-container input[type=text], .pop-container input[type=password] {
+    width: 100%;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    border: none;
+    background: #f1f1f1;
+}
+
+/*When the inputs get focus, do something */
+.pop-container input[type=text]:focus, .pop-container input[type=password]:focus{
+    background-color: #ddd;
+    outline: none;
+}
+
+/*Set a style for the submit/login button*/
+.pop-container .btn{
+    background-color: #4CAF50;
+    color: white;
+    padding: 16px 20px;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    margin-bottom: 10px;
+    opacity: 0.8;
+}
+
+/*Add a red background color to the cancel button*/
+.pop-container .cancel{
+    background-color: red;
+}
+
+/*Add hover effects to buttons*/
+.pop-container .btn:hover, .open-button:hover {
+    opacity: 1;
+}
+
+/*Challenge 359: CSS zoom in/out effect*/
+img {
+    width: 200px;
+    height: 200px;
+}
+@keyframes zoominoutsinglefeatured{
+    0% {
+        transform: scale(1,1);
+    }
+    50% {transform: scale(1.2, 1.2) ;
+    }
+    100% {
+        transform: scale(1,1);
+    }
+}
+
+.single-featured-image-header img{
+    animation: zoominoutsinglefeatured 15s forwards;
 }

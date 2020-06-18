@@ -3,21 +3,50 @@
     <head>
         <meta charset="UTF-8">
         <title>Challenge 356</title>
-        <script src="JS/challenge356.js"></script>
+        <script src="./JS/challenge356.js"></script>
         <link rel="stylesheet" href="CSS/challenge356.css">
     </head>
     
     <h2 style=" text-align:center">Form and Validation with JS</h2>
     <body>
-        <form name="valForm" onsubmit="validationForm()" method="post">
-            <label for="fname">Enter Name</label><br>
-                <input type="text" name="fname" required><br>
-            <label for="email">Enter Email Address</label><br>
-                <input type="text" name="email" required><br>
-            <label for="pnumber">Enter Phone Number</label><br>
-                <input type="text" name="pnumber" required><br>
-            <input id="submit" type="submit" value="submit">
-        </form>
+        <!--challenge 356: form/ form validation-->
+        <div class="fValidate" id="vForm">
+            <form name="valForm" onsubmit="return validateForm()" method="post">
+                <label for="fname">Enter Name</label><br>
+                    <input type="text" name="fname"><br>
+                <label for="email">Enter Email Address</label><br>
+                    <input type="text" name="email"><br>
+                <label for="pnumber">Enter Phone Number</label><br>
+                    <input type="text" name="pnumber"><br>
+                <input type="submit" value="submit">
+            </form>
+        </div>
+
+        <!--challenge 357: popup contact form-->
+        <h1><strong>Popup Contact Form</strong></h1>
+        <p>Click "Open Form" to view the popup contact form.</p>
+            <button class="open-button" onclick="openForm()">Open Form</button>
+            <div class="form-popup" id="pop">
+                <form action="/action_page.php" class="pop-container">
+                <h1>Login</h1>
+
+                    <label for="email"><b>Email</b></label>
+                    <input type="text" placeholder="Enter Email" name="email" required>
+
+                    <label for="psw"><b>Password</b></label>
+                    <input type="text" placeholder="Enter Password" name="psw" required>
+                
+                    <button type="submit" class="btn">Login</button>
+                    <button type="submit" class="btn cancel" onclick="closeForm()">Close</button>
+                </form>
+            </div>
+
+        <!--Challenge 359: CSS zoom in/out effect-->
+        <h1>Image zoom in/out in CSS</h1>
+        <div class="single-featured-image-header">
+            <img id src="./IMG/pixelSmile.png" alt="happyPixel">
+        </div>
+
     </body>
 </html>
 
