@@ -1,15 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1" charset="UTF-8">
         <title>Challenge 356</title>
         <script src="./JS/challenge356.js"></script>
         <link rel="stylesheet" href="CSS/challenge356.css">
     </head>
     
-    <h2 style=" text-align:center">Form and Validation with JS</h2>
     <body>
+        <!--challenge 361: automatic slideshow-->
+        <div id="slideshow">
+
+            <div>
+                <img src="./IMG/pixelHeart.png" style="background-color: green;">
+            </div>
+            <div>
+                <img src="./IMG/pixelSmile.png" style="background-color: darkgray;">
+            </div>
+            <div>
+                Example of an automatic slideshow.
+            </div>
+        </div>
+        
+            
+        <!--Challenge 360 part 2: smooth scroll-->
+        <div class="main" id="section1">
+            <h2>Section 1</h2>
+            <a href="#section2">Click for section 2.</a>
+        </div>
+
         <!--challenge 356: form/ form validation-->
+        <h2 style=" text-align:center">Form and Validation with JS</h2>
         <div class="fValidate" id="vForm">
             <form name="valForm" onsubmit="return validateForm()" method="post">
                 <label for="fname">Enter Name</label><br>
@@ -47,6 +68,43 @@
             <img id src="./IMG/pixelSmile.png" alt="happyPixel">
         </div>
 
+        <!-- Challenge 360 Part 1:HTML bookmarks-->
+        <h1>Utilizing HTML bookmarks</h1>
+            <div>
+                <h2>Example of an Absolute URL</h2>
+                    <p><a href="https://www.google.com/" style="font-weight: 700; font-size:x-large; color:yellow;"><b>Google</b></a></p>
+                <h2>Using an image as a link</h2>
+                    <a href="https://www.google.com/">
+                    <img src="./IMG/pixelHeart.png" alt="iHeartGoogle" style="width:100px; height:100px;"></a>
+            </div>
+
+        <!--Challenge 360 part 2: Smooth scroll-->
+        <h1>Smooth Scroll</h1>
+
+            <div class="main" id="section2">
+                <h2>Section 2</h2>
+                <p>Congratulations. What you've just experienced is the result of a smooth scroll.</p>
+                <a href="#section1">Click for a smooth scroll back to section 1</a>
+            </div>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    
+        <script>
+        
+            $(document).ready(function(){
+
+
+            $("#slideshow > div:gt(0)").hide();
+
+            setInterval(function() {
+                $('#slideshow > div:first')
+                .fadeOut(1000)
+                .next()
+                .fadeIn(1000)
+                .end()
+                .appendTo('#slideshow');
+            }, 3000);
+        })
+        </script>
     </body>
 </html>
 

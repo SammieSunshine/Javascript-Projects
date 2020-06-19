@@ -1,5 +1,6 @@
 /*challenge 356: form/ form validation*/
 html{
+    scroll-behavior: smooth;/*challenge 360.2. Ensures smooth scrolling*/
     background-color: rgb(3, 3, 185);
     text-align: center;
     color:darkgray ;
@@ -154,4 +155,44 @@ img {
 
 .single-featured-image-header img{
     animation: zoominoutsinglefeatured 15s forwards;
+}
+
+/*Challenge 360 part 2 smooth scroll*/
+/*note: Scroll behavior already applied to html element*/
+
+#section1 {
+    height: 200px;
+    background-color:rgba(204, 174, 7, 0.774);
+    color: white;
+    font-family: 'Courier New', Courier, monospace;
+    font: 30px bolder;
+    border: 10px groove rgb(49, 48, 48);
+
+}
+
+#section2{
+    height: 200px;
+    background-color: gray;
+    color: rgba(204, 174, 7, 0.774);
+    font-family: 'Courier New', Courier, monospace;
+    font: 30px  bolder;
+    border: 10px groove rgb(49, 48, 48);
+}
+
+/*automatic slides show for challenge 361*/
+#slideshow {
+    margin: 50px auto;
+    position: relative;
+    width: 240px;
+    height: 240px;
+    padding: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+}
+
+#slideshow >div {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    right: 10px;
+    bottom: 10px;
 }
